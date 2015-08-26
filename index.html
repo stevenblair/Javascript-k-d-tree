@@ -2,6 +2,7 @@
 	<head>
 		<script src="kdtree.js"></script>
 		<script src="data/latlng.js"></script>
+		<script src="data/stations.js"></script>
 		<script type="text/javascript">
 			
 			var NUM_NEAREST_TO_FIND = 30;
@@ -28,7 +29,9 @@
 				var maxY = -Math.pow(2, 31); 
 				minY =  Math.pow(2, 31) - 1;
 				
-				points = latlng; // latlngs comes from data/latlng.js, this file contains a single huge object.
+				// points = latlng; // latlngs comes from data/latlng.js, this file contains a single huge object.
+				points = stations;	// list of UK railway stations
+
 				for (var i = 0; i < points.length; ++i) {
 					var coord = points[i];
 					var tmp = coord.x;
