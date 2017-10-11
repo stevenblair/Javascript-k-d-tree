@@ -5,7 +5,7 @@
 		<script src="data/stations.js"></script>
 		<script type="text/javascript">
 			
-			var NUM_NEAREST_TO_FIND = 30;
+			var NUM_NEAREST_TO_FIND = 50;
 			
 			var canvas;
 			var context;
@@ -20,8 +20,8 @@
 				window.addEventListener('mouseup', mouseup, true);
 				
 				canvas  = document.getElementById("pointcanvas");
-				canvas.height = window.innerHeight * 2;
-				canvas.width  = 2 * canvas.height / 3;
+				canvas.height = window.innerHeight * 0.95;
+				canvas.width  = 2 * canvas.height / 3.5;
 				context = canvas.getContext("2d");
 
 				var maxX = -Math.pow(2, 31); 
